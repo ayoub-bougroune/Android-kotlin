@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".main.Profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:src="@drawable/covid5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TextView
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="covid-19 Pandemic"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cases"
+            android:textColor="@color/colorTotalCases"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvTotalConfirmed"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/colorTotalCases"
+            tools:text="162387" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Deaths"
+            android:textSize="25dp"
+            android:textColor="@color/colorTotalDeaths" />
+
+        <TextView
+            android:id="@+id/tvTotalDeaths"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/colorTotalDeaths"
+            tools:text="75648" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalRecovered"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Total Recovered"
+            android:textColor="@color/colorTotalRecovered" />
+
+        <TextView
+            android:id="@+id/tvTotalRecovered"
+            style="@style/TotalFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/colorTotalRecovered"
+            tools:text="75938" />
+
+        <TextView
+            android:id="@+id/tvLastUpdated"
+            style="@style/LabelFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            tools:text="Last Updated\n Mon, 23 Mar 2020 1:20:30 PM"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress" />
+</RelativeLayout>
